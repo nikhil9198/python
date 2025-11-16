@@ -1,0 +1,6 @@
+print('Hello World')
+print('i am learning python')
+print("hello","world")
+print(25)
+print(25-15)
+print(3>2)

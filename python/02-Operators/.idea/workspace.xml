@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8c24bdcf-d805-4bfc-88a3-517a94a64afa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-first-program.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-variables-and-data-types/01-variable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-variables-and-data-types/02_string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-variables-and-data-types/03_data_types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01_arithmetic_operators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_assignment_operators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_comparison_operators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_logical_operators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_membership_operators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_Identity_Operators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Handling-User-Input/01_Input_From_User.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Handling-User-Input/02_typy_casting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-Control_flow/01_if_statement.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-Control_flow/02_if_else_statement.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-Control_flow/03_elif_statement.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-Control_flow/04_simple_calculator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-Loops/01_for_loop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-Loops/02_while_loop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-Loops/03_Break_Continue_pass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_String_Manipulation/01_String_indexing&amp;Slicing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_String_Manipulation/02_String_iteration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_String_Manipulation/03_string_function.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_String_Manipulation/04_String_advance_function.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_String_Manipulation/05_chr_and_ord.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_String_Manipulation/06_string_format.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07_list/01_understanding_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../07_list/02_list_iteration.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="35XlyygWGWnKEBURfZdUtqQK3j1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Nikhil/Documents/Programming/python/02-Operators"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d9fa9deec7cb-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.23892.515" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c24bdcf-d805-4bfc-88a3-517a94a64afa" name="Changes" comment="" />
+      <created>1763264556026</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763264556026</updated>
+    </task>
+    <servers />
+  </component>
+</project>
