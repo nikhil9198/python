@@ -32,6 +32,6 @@ while True:
     elif oprInput==5:
         print("Display Queue: ", list1)
     elif oprInput==6:
-        break;
+        break
     else:
         print("Invalid Operation")
