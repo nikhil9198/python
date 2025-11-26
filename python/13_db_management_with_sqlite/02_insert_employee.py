@@ -7,7 +7,7 @@ cursor=conn.cursor()
 cursor.execute('''
     INSERT INTO employees(name, age, department)
     VALUES(?,?,?)
-''', ("Dev",23,"Development"))
+''', ("John",26,"Development"))
 conn.commit()
 conn.close()
 print("Employee inserted successfully!")
