@@ -1,8 +1,4 @@
 import sqlite3
-
-from pycparser.c_ast import While
-
-
 def get_connection():
     conn = sqlite3.connect("employee_management.db")
     cursor = conn.cursor()
@@ -37,7 +33,7 @@ def add_employee():
     cursor.execute("INSERT INTO employees(name, age, department) VALUES(?,?,?)", (name, age, dept))
     conn.commit()
     conn.close()
-    print("Employee Added Successfully!")
+    print("Employee Added Successfully!\n")
 
 def view_employee():
     conn, cursor = get_connection()
@@ -56,7 +52,7 @@ def search_by_department():
     for row in rows:
         print(row)
     conn.close()
-    print("")
+    print("\n")
 
 def update_department():
     emp_id=int(input("Enter Employee ID to Update: "))
@@ -65,7 +61,7 @@ def update_department():
     cursor.execute("UPDATE employees SET department=? WHERE id=?", (new_dept,emp_id))
     conn.commit()
     conn.close()
-    print("Employee Updated successfully!")
+    print("Employee Updated successfully!\n")
 
 def delete_employee():
     emp_id=(input("Enter Employee ID to Delete: "))
@@ -73,23 +69,23 @@ def delete_employee():
     cursor.execute("DELETE FROM employees WHERE id=?",(emp_id,))
     conn.commit()
     conn.close()
-    print("Employee Deleted successfully!")
+    print("Employee Deleted successfully!\n")
 
 def assign_project():
     emp_id=(input("Enter Employee ID: "))
     project=input("Enter project name: ")
     conn, cursor = get_connection()
-    cursor.execute("INSET INTO projects (emp_id,project_name) VALUES(?,?)",(emp_id,project))
+    cursor.execute("INSERT INTO projects(emp_id,project_name) VALUES(?,?)",(emp_id,project))
     conn.commit()
     conn.close()
-    print("Project assign successfully!")
+    print("Project assign successfully!\n")
 
 def view_employee_with_projects():
     conn, cursor = get_connection()
     cursor.execute('''
-        SELECT employees.name, employees.department, projects.project
+        SELECT employees.name, employees.department, projects.project_name
         FROM employees
-        INNER JOIN projects ON employees.id = project.emp_id
+        INNER JOIN projects ON employees.id = projects.emp_id
     ''')
     rows=cursor.fetchall()
     for row in rows:
@@ -98,6 +94,7 @@ def view_employee_with_projects():
     print("")
 
 def menu():
+    create_tables()
     while True:
         print("===Employee Management System")
         print("1. Add new employee")
