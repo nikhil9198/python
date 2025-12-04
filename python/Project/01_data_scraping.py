@@ -7,7 +7,7 @@ req=requests.get(url)
 soup=BeautifulSoup(req.text, "html.parser")
 # print(soup)
 
-# productsCards=soup.find_all("div", class_="col-md-4 col-xl-4 col-lg-4")
+productsCards=soup.find_all("div", class_="col-md-4 col-xl-4 col-lg-4")
 # print(len(productsCards))
 
 titles=soup.find_all("a", class_="title")
@@ -16,8 +16,8 @@ titles=soup.find_all("a", class_="title")
 for item in titles:
     print(item.txt)
 
-titles=soup.find_all("a", class_="title")
+prices=soup.find_all("h4", class_="price float-end card-title pull-right")
 # print(titles)
 
-for item in titles:
+for item in prices:
     print(item.txt)
