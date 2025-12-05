@@ -22,7 +22,7 @@ prices=soup.find_all("h4", class_="price float-end card-title pull-right")
 #     print(item.txt)
 
 descriptions=soup.find_all("p", class_="description card-text")
-for item in descriptions:
+# for item in descriptions:
 #     print(item.txt)
 
 noOfReviews=soup.find_all("p", class_="review-count float-end")
