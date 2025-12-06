@@ -1,30 +1,27 @@
 import requests
 from bs4 import BeautifulSoup
+import pandas as pd
+
+#Step-1: fetch webpage content
 url="https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops"
 req=requests.get(url)
-# print(req)
 
+#Step-2: parse with BeautifulSoup
 soup=BeautifulSoup(req.text, "html.parser")
-# print(soup)
 
-[item.text,strip() for item in soup.find_all("div", class_="col-md-4 col-xl-4 col-lg-4")]
-productsCards=
-# print(len(productsCards))
+#Step-3: extracting data
+titles=[item.text.strip() for item in soup.find_all("a", class_="title")]
+prices=[item.text.strip()for item in soup.find_all("h4", class_="price float-end card-title pull-right")]
+description=[item.text.strip()for item in soup.find_all("p", class_="description card-text")]
+noOfReviews=[item.text.strip()for item in soup.find_all("p", class_="review-count float-end")]
 
-# titles=soup.find_all("a", class_="title")
-# # print(titles)
-#
-# for item in titles:
-#     print(item.txt)
+#Step-3: Storing data in dataform
+df=pd.DataFrame({
+    "Title": titles,
+    "Description": description,
+    "Price": prices,
+    "Reviews": noOfReviews
+})
 
-prices=soup.find_all("h4", class_="price float-end card-title pull-right")
-# for item in prices:
-#     print(item.txt)
-
-descriptions=soup.find_all("p", class_="description card-text")
-# for item in descriptions:
-    # print(item.txt)
-
-noOfReviews=soup.find_all("p", class_="review-count float-end")
-for item in noOfReviews:
-    print(item.txt)
+df.to_excel("laptops_data.xlsx", index=False)
+print("Data has been save successfully.!")
